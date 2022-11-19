@@ -1,50 +1,79 @@
 :root {
   /* включает цвет логотипа */
-  --link-active-color:#2196f3;  
+  --link-active-color: #2196f3;
 
-  --logo-second-color: #000000; 
-  --logo-secondfooter-color:  #ffffff;
+  --logo-second-color: #000000;
+  --logo-secondfooter-color: #ffffff;
   /* остальніе переменніе цвета */
 
   --head-back-color: rgba(236, 236, 236, 1);
-  --head-nav-color:  #212121;
+  --head-nav-color: #212121;
   --head-mailtel-color: #757575;
   --footer-back-color: #2f303a;
-  --adress-footer-color:  #ffffff;
+  --adress-footer-color: #ffffff;
   --footer-MailTel-color: rgba(255, 255, 255, 0.6);
   --main-HEroback-color: #2f303a;
   --main-HeroText-color: #ffffff;
   --main-HeroButtonText-color: #ffffff;
   --main-HeroButtonBack-color: rgba(33, 150, 243, 1);
   --main-ButtonActive-color: rgb(13, 15, 17);
-  --main-Section1and2Back-color: #FFFFFF;
-  --H2-H3-Text-color:  #212121;
+  --main-Section1and2Back-color: #ffffff;
+  --H2-H3-Text-color: #212121;
   --portfolio-Button_color: #212121;
   --portfolio-ButtonActive-color: #ffffff;
-  --portfolio-BattonBack-color:  rgba(33, 150, 243, 1);
+  --portfolio-BattonBack-color: rgba(33, 150, 243, 1);
   --P-Text-color: #757575;
-  --Main-Section3Back-color:  #F5F4FA;
-
+  --Main-Section3Back-color: #f5f4fa;
 }
 
-
-
-
+/* основные настрйки */
 body {
   font-family: "roboto", "raleway", "sans-serif";
   color: red;
 }
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
+ul {
+  margin: 0px;
+  padding-left: 0px;
+}
+.container {
+  width: 1200px;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+.section {
+  padding: 94px 0px 94px 0px;
+}
+img {
+  display: block;
+}
+
 .links {
   text-decoration: none;
 }
 .ulstyle {
-  list-style:none ;
+  list-style: none;
 }
 
 /* Голова */
 
 .head {
-  background-color:var(--head-back-color);
+  background-color: var(--head-back-color);
+}
+.LogoPosition {
+  width: 145px;
+  height: 31px;
+  left: 215px;
+  top: 24px;
 }
 
 .logo {
@@ -53,7 +82,8 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color:var(--link-active-color)
+  color: var(--link-active-color);
+  padding: 24px 0 25px 0px;
 }
 
 .logo2 {
@@ -62,7 +92,7 @@ body {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color:var(--logo-second-color);
+  color: var(--logo-second-color);
 }
 
 .TextNAV {
@@ -71,10 +101,28 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color:var(--head-nav-color);
+  color: var(--head-nav-color);
 }
 .TextNAV:hover {
-  color:var(--link-active-color);
+  color: var(--link-active-color);
+}
+.studioP {
+  width: 42px;
+  height: 16px;
+  left: 453px;
+  top: 32px;
+}
+.portfolioP {
+  width: 58px;
+  height: 16px;
+  left: 545px;
+  top: 32px;
+}
+.contactsP {
+  width: 59px;
+  height: 16px;
+  left: 653px;
+  top: 32px;
 }
 
 .mit {
@@ -83,10 +131,10 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color:var(--head-mailtel-color);
+  color: var(--head-mailtel-color);
 }
 .mit:hover {
-  color:var(--link-active-color);
+  color: var(--link-active-color);
 }
 /* Ноги */
 
@@ -94,14 +142,18 @@ body {
   background-color: var(--footer-back-color);
 }
 
+.logodown {margin-bottom: 28px;
+padding: 60px 0 0 0px; }
+
 .logo3 {
   font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color:var(--logo-secondfooter-color);
+  color: var(--logo-secondfooter-color);
 }
+
 
 .Adress {
   font-family: "Roboto";
@@ -110,10 +162,11 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color:var(--adress-footer-color);
+  color: var(--adress-footer-color);
+  margin-bottom: 12px;
 }
 .Adress:hover {
-  color:var(--link-active-color);
+  color: var(--link-active-color);
 }
 
 .MiT {
@@ -126,13 +179,14 @@ body {
   color: var(--footer-MailTel-color);
 }
 .MiT:hover {
-  color:var(--link-active-color);
+  color: var(--link-active-color);
 }
+.teldown{padding-bottom: 60px;}
 
 /* Майн веб */
 
 .WS0 {
-  background:var(--main-HEroback-color);
+  background: var(--main-HEroback-color);
 }
 
 .HERO {
@@ -144,15 +198,26 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--main-HeroButtonText-color);
+  margin-bottom: 30px;
+  width: 696px;
+  height: 120px;
+  left: 452px;
+  top: 280px;
 }
 .Hbutton {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
-  color:var(--main-HeroText-color);
+  color: var(--main-HeroText-color);
   background-color: var(--main-HeroButtonBack-color);
   cursor: pointer;
+  text-align: center;
+  width: 161px;
+  height: 30px;
+  left: 720px;
+  top: 440px;
+
 }
 .Hbutton:hover,
 .Hbutton:focus {
@@ -164,7 +229,7 @@ body {
 /* WS1P -wEBSTUDIO Section 1 P */
 
 .WS1 {
-  background-color:var(--main-Section1and2Back-color);
+  background-color: var(--main-Section1and2Back-color);
 }
 
 .WS1h3 {
@@ -174,7 +239,8 @@ body {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color:var(--H2-H3-Text-color);
+  color: var(--H2-H3-Text-color);
+  margin-bottom: 10px;
 }
 .WS1P {
   font-family: "Roboto";
@@ -182,12 +248,12 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color:var(--P-Text-color);
+  color: var(--P-Text-color);
 }
 
 /* section 2 */
 .WS2 {
-  background-color:var(--main-Section1and2Back-color);
+  background-color: var(--main-Section1and2Back-color);
 }
 
 .WS2h2 {
@@ -195,9 +261,9 @@ body {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  text-align: center;
   letter-spacing: 0.03em;
-  color:var(--H2-H3-Text-color);
+  color: var(--H2-H3-Text-color);
+  margin-bottom: 50px;
 }
 
 /* section 3 */
@@ -205,7 +271,9 @@ body {
 /* WS3h3 - Webstudio section 3 h3 */
 /* WS3p Webstudio section 3 p*/
 
-.WS3 { background-color:var(--Main-Section3Back-color);}
+.WS3 {
+  background-color: var(--Main-Section3Back-color);
+}
 
 .WS3h2 {
   font-family: "Roboto";
@@ -214,7 +282,11 @@ body {
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
-  color:var(--H2-H3-Text-color);
+  color: var(--H2-H3-Text-color);
+  margin-bottom: 50px;
+}
+.imgworkers {
+  margin-bottom: 30px;
 }
 
 .WS3h3 {
@@ -225,6 +297,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--H2-H3-Text-color);
+  margin-bottom: 10px;
 }
 
 .WS3p {
@@ -234,7 +307,7 @@ body {
   line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
-  color:var(--P-Text-color);
+  color: var(--P-Text-color);
 }
 /*Portfolio  */
 
@@ -250,8 +323,8 @@ body {
 }
 .btnP:hover,
 .btnP:focus {
-  color:var(--portfolio-ButtonActive-color);
-  background-color:var(--portfolio-BattonBack-color);
+  color: var(--portfolio-ButtonActive-color);
+  background-color: var(--portfolio-BattonBack-color);
 }
 
 /* section 2*/
@@ -275,5 +348,5 @@ body {
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.03em;
-  color:var(--P-Text-color);
+  color: var(--P-Text-color);
 }
