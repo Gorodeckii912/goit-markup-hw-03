@@ -62,13 +62,21 @@ img {
 }
 .ulstyle {
   list-style: none;
+  display: flex;
 }
 
-/* Голова */
+/* Голова----------------- */
 
 .head {
   background-color: var(--head-back-color);
 }
+header .container{ 
+  display: flex;
+align-items: center;
+
+}
+
+
 .LogoPosition {
   width: 145px;
   height: 31px;
@@ -84,6 +92,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--link-active-color);
   padding: 24px 0 25px 0px;
+  margin-right: 93px;
 }
 
 .logo2 {
@@ -94,6 +103,7 @@ img {
   letter-spacing: 0.03em;
   color: var(--logo-second-color);
 }
+.logonavflex { display: flex;}
 
 .TextNAV {
   font-family: "Roboto";
@@ -111,18 +121,21 @@ img {
   height: 16px;
   left: 453px;
   top: 32px;
+  margin-right: 50px;
 }
 .portfolioP {
   width: 58px;
   height: 16px;
   left: 545px;
   top: 32px;
+  margin-right: 50px;
 }
 .contactsP {
   width: 59px;
   height: 16px;
   left: 653px;
   top: 32px;
+  margin-right: 385px;
 }
 
 .mit {
@@ -132,15 +145,21 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--head-mailtel-color);
+  
 }
 .mit:hover {
   color: var(--link-active-color);
 }
-/* Ноги */
+.mailmargin { margin-right: 40px;}
+.telmargin 
+/* Ноги ----------------------*/
 
 .foot {
   background-color: var(--footer-back-color);
 }
+
+.ulstyle2 {
+  list-style: none;}
 
 .logodown {margin-bottom: 28px;
 padding: 60px 0 0 0px; }
@@ -183,7 +202,7 @@ padding: 60px 0 0 0px; }
 }
 .teldown{padding-bottom: 60px;}
 
-/* Майн веб */
+/* Майн веб--------------------------- */
 
 .WS0 {
   background: var(--main-HEroback-color);
@@ -224,7 +243,7 @@ padding: 60px 0 0 0px; }
   color: var(--main-ButtonActive-color);
 }
 
-/* section1 */
+/* section1------------------------- */
 /* WS1h3 - Webstudio Section 1 H3 */
 /* WS1P -wEBSTUDIO Section 1 P */
 
@@ -251,7 +270,7 @@ padding: 60px 0 0 0px; }
   color: var(--P-Text-color);
 }
 
-/* section 2 */
+/* section 2 -------------------------*/
 .WS2 {
   background-color: var(--main-Section1and2Back-color);
 }
@@ -266,7 +285,7 @@ padding: 60px 0 0 0px; }
   margin-bottom: 50px;
 }
 
-/* section 3 */
+/* section 3------------------------------ */
 /* WS3h2 - Webstudio section 3 h3 */
 /* WS3h3 - Webstudio section 3 h3 */
 /* WS3p Webstudio section 3 p*/
@@ -309,7 +328,7 @@ padding: 60px 0 0 0px; }
   letter-spacing: 0.03em;
   color: var(--P-Text-color);
 }
-/*Portfolio  */
+/*Portfolio  ------------------------------------*/
 
 .btnP {
   font-family: "Roboto";
@@ -327,7 +346,7 @@ padding: 60px 0 0 0px; }
   background-color: var(--portfolio-BattonBack-color);
 }
 
-/* section 2*/
+/* section 2-----------------------------------------*/
 
 .PS2 {
   background-color: var(--main-Section1and2Back-color);
